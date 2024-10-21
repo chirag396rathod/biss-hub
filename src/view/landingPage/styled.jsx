@@ -197,12 +197,13 @@ export const ProcessSectionContainer = styled.div`
         line-height: 204px;
         color: rgba(0, 0, 0, 0.05);
         position: absolute;
-        right: 55.5px;
+        right: 120px;
         top: -25px;
         z-index: -1;
       }
       .content {
         margin-top: 24px;
+        max-width: 290px;
         .card-title {
           font: 800 16px "Manrope";
           line-height: 30px;
@@ -267,14 +268,108 @@ export const NextLevelSectionContainer = styled.div`
     }
   }
   .goth-section {
-    text-align: center;
     margin-top: -127px;
     .section-title {
+      text-align: center;
       font-size: 48px;
     }
     .section-description {
+      text-align: center;
       font-size: 20px;
       margin-bottom: 75px;
+    }
+    .grow-list {
+      &.row {
+        margin-left: -15px;
+        margin-right: -15px;
+        .col-lg-4,
+        .col-md-4,
+        .col-sm-12 {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+      .grow-item {
+        background-color: #fff;
+        padding: 54px 21px 39px 21px;
+        border-radius: 20px;
+        .icon-cover {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 15px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .title {
+          font: 800 24px "Manrope";
+          line-height: 60px;
+          color: #16012c;
+        }
+        .card-desc {
+          font: 400 16px "Manrope";
+          line-height: 30px;
+          color: #64607d;
+          margin-bottom: 20px;
+        }
+        .link {
+          font: 600 16px "Manrope";
+          color: #01966b;
+          cursor: pointer;
+          img {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+  .footer-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 74px;
+    position: relative;
+    bottom: -26px;
+    .footer-button {
+      height: 52px;
+      padding: 16px 42px;
+    }
+  }
+`;
+
+export const BuiltNowSectionContainer = styled.div`
+  margin-top: 126px;
+  .container {
+    border: 1px solid #dee1e6;
+    border-radius: 20px;
+    padding: 41px 44px 37px 44px;
+  }
+  .title {
+    font: 800 34px "Manrope";
+    line-height: 46px;
+    color: #000000;
+  }
+  .text-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 18px;
+    margin-top: 16px;
+    .image-cover {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e9ecf2;
+      border-radius: 5px;
+    }
+    .content {
+      font: 600 20px "Poppins";
+      line-height: 32px;
+      color: #64607d;
     }
   }
 `;

@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import SoftwareSection from "./SoftwareSection";
 import ProcessSection from "./ProcessSection";
 import NextLevelSection from "./NextLevelSection";
+import BuiltNowSection from "./BuiltNowSection";
 
 const Landing = () => {
   return (
@@ -12,6 +13,7 @@ const Landing = () => {
       <SoftwareSection />
       <ProcessSection />
       <NextLevelSection />
+      <BuiltNowSection />
     </div>
   );
 };
