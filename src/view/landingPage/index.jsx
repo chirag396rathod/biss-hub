@@ -5,6 +5,8 @@ import SoftwareSection from "./SoftwareSection";
 import ProcessSection from "./ProcessSection";
 import NextLevelSection from "./NextLevelSection";
 import BuiltNowSection from "./BuiltNowSection";
+import OfferedSection from "./OfferedSection";
+import WhyChooseUs from "./WhyChooseUs";
 
 const Landing = () => {
   return (
@@ -14,6 +16,8 @@ const Landing = () => {
       <ProcessSection />
       <NextLevelSection />
       <BuiltNowSection />
+      <OfferedSection />
+      <WhyChooseUs />
     </div>
   );
 };

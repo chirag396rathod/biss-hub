@@ -111,9 +111,10 @@ export const SoftwareSectionContainer = styled.div`
   border-top: 1px solid rgb(196, 196, 196, 0.3);
   border-bottom: 1px solid rgb(196, 196, 196, 0.3);
   padding: 63px 0 75px 0;
-  margin: 42px 0;
+  margin: 42px 0 0 0;
   text-align: center;
   width: 100%;
+  background-color: #fff;
   .section-title {
     font: 600 22px "Manrope";
     line-height: 25px;
@@ -128,9 +129,11 @@ export const SoftwareSectionContainer = styled.div`
 `;
 
 export const ProcessSectionContainer = styled.div`
-  margin-top: 70px;
+  padding-top: 70px;
+  padding-bottom: 340px;
   position: relative;
   overflow: hidden;
+  background-color: #fff;
   .section-sub-title {
     font: 700 14px "Poppins";
     line-height: 17.33px;
@@ -153,14 +156,13 @@ export const ProcessSectionContainer = styled.div`
     background-color: #f2f2f2;
     border-radius: 50%;
     position: absolute;
-    z-index: -1;
   }
   .left-circle {
     top: 0px;
     left: -336px;
   }
   .right-circle {
-    top: 70px;
+    top: 0px;
     right: -336px;
   }
   .row {
@@ -199,7 +201,6 @@ export const ProcessSectionContainer = styled.div`
         position: absolute;
         right: 120px;
         top: -25px;
-        z-index: -1;
       }
       .content {
         margin-top: 24px;
@@ -221,7 +222,7 @@ export const ProcessSectionContainer = styled.div`
 
 export const NextLevelSectionContainer = styled.div`
   background-color: #f5f8ff;
-  margin-top: 340px;
+  padding-top: -340px;
   .section-image-container {
     max-width: 830px;
     margin: 0 auto;
@@ -340,7 +341,9 @@ export const NextLevelSectionContainer = styled.div`
 `;
 
 export const BuiltNowSectionContainer = styled.div`
-  margin-top: 126px;
+  padding-top: 126px;
+  padding-bottom: 132px;
+  background-color: #fff;
   .container {
     border: 1px solid #dee1e6;
     border-radius: 20px;
@@ -358,6 +361,7 @@ export const BuiltNowSectionContainer = styled.div`
     gap: 0 18px;
     margin-top: 16px;
     .image-cover {
+      min-width: 60px;
       width: 60px;
       height: 60px;
       display: flex;
@@ -370,6 +374,93 @@ export const BuiltNowSectionContainer = styled.div`
       font: 600 20px "Poppins";
       line-height: 32px;
       color: #64607d;
+    }
+  }
+`;
+
+export const OfferedSectionContainer = styled.div`
+  background-color: #fff;
+  padding-bottom: 111px;
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+    .col-lg-4,
+    .col-md-4,
+    .col-sm-12 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .card-item {
+    background: #f8f9fd;
+    border-radius: 20px;
+    min-height: 354px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    .title {
+      font: 800 38px "Manrope";
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .desc {
+      font: 400 16px "Poppins";
+      line-height: 30px;
+      padding-bottom: 36px;
+      color: #64607d;
+    }
+  }
+`;
+
+export const WhyChooseUsContainer = styled.div`
+  background-color: #05796b;
+  padding: 75px 0;
+  .sub-text {
+    font: 700 14px "Poppins";
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .sec-title {
+    font: 800 50px "Manrope";
+    color: #ffffff;
+    line-height: 60px;
+    margin-bottom: 29px;
+  }
+  .sec-desc {
+    font: 500 20px "Manrope";
+    line-height: 30px;
+    color: #ffffff;
+  }
+  .form-inputs {
+    max-width: 371px;
+    margin: 0 auto;
+    input {
+      background: rgba(242, 243, 244, 0.2);
+      border: none;
+      outline: none;
+      padding: 15px 21px;
+      height: 60px;
+      width: 100%;
+      color: #fff;
+      margin-bottom: 24px;
+      border-radius: 5px;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+    button{
+      font: 700 16px 'Poppins';
+      color: #fff;
+      background: #F57059;
+      border-radius: 5px;
+      line-height: 22px;
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 60px;
     }
   }
 `;

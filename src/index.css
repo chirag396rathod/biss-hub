@@ -11,10 +11,10 @@ body {
 body {
   background: #f7f7f7;
 }
-.modal-dialog {
+.auth-modal .modal-dialog {
   max-width: 764px !important;
 }
-.modal-content {
+.auth-modal .modal-content {
   border: none !important;
   border-radius: 15px !important;
 }
@@ -24,9 +24,29 @@ body {
   color: #000000;
   margin-bottom: 14px;
 }
-.section-description{
-  font: 500 16px 'Manrope';
-  color: #64607D;
+.section-description {
+  font: 500 16px "Manrope";
+  color: #64607d;
   line-height: 30px;
   margin-bottom: 34px;
+}
+.notification-modal .modal-dialog {
+  margin-right: 300px !important;
+  margin-top: 100px;
+  .close-icon {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.notification-modal .modal-dialog {
+  max-width: 360px !important;
 }

@@ -4,14 +4,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./view/landingPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 const App = () => {
   return (
-    <React.Fragment>
+    <Provider store={store}>
       <Header />
       <LandingPage />
       <Footer />
-    </React.Fragment>
+    </Provider>
   );
 };
 
