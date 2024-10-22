@@ -11,7 +11,8 @@ import { setUser } from "../../redux/features/auth/commonSlice";
 import { IoIosNotifications } from "react-icons/io";
 import NotificationModal from "./NotificationModal";
 import { IoIosLogOut } from "react-icons/io";
-
+import { RiMenu3Fill } from "react-icons/ri";
+import Sidebar from "./sidebar";
 
 const Header = () => {
   const user = useSelector((state) => state.commonReducer.user);
@@ -19,6 +20,11 @@ const Header = () => {
   const [show, setShow] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
   const [showNotification, setShowNotification] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleToggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   const handleClose = () => {
     setShow(!show);
@@ -33,8 +39,8 @@ const Header = () => {
 
   const handleSignOut = () => {
     localStorage.clear();
-    dispatch(setUser(null))
-  }
+    dispatch(setUser(null));
+  };
 
   useEffect(() => {
     const localUser =
@@ -49,6 +55,12 @@ const Header = () => {
         <div className="logo-container">
           <img src={logo} alt="logo" />
         </div>
+        <RiMenu3Fill
+          onClick={handleToggleMenu}
+          className="menu"
+          color="var(--header-bg-light-color)"
+          size={24}
+        />
         <nav>
           <div className="nav-item">
             <a to={"/product"}>Product</a>
@@ -90,6 +102,15 @@ const Header = () => {
           )}
         </div>
       </div>
+      {showMenu && (
+        <Sidebar
+          show={showMenu}
+          handleClose={handleToggleMenu}
+          handleSignUp={handleCloseSignUp}
+          handleSignIn={handleClose}
+          handleSignOut={handleSignOut}
+        />
+      )}
       {show && (
         <LoginModal
           show={show}

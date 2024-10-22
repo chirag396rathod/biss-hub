@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
     <WhyChooseUsContainer>
       <div className="container">
         <Row>
-          <Col>
+          <Col md={6} lg={6} sm={12}>
             <div className="sub-text">Why Choose Us</div>
             <div className="sec-title">
               Track your crytpo <br /> portfolio on the <br /> best way possible
@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
               person am secure of estate genius at.
             </div>
           </Col>
-          <Col>
+          <Col md={6} lg={6} sm={12}>
             <form className="form-inputs">
               <input type="text" placeholder="Email Address" />
               <input type="text" placeholder="Password" />

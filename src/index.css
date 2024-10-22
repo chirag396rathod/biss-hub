@@ -50,3 +50,21 @@ body {
 .notification-modal .modal-dialog {
   max-width: 360px !important;
 }
+@media screen and (max-width: 768px) {
+  br{
+    display: none !important;
+  }
+}
+.modal-sidebar{
+  .modal-dialog{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    .modal-content{
+      border-radius: 0;
+      
+      width: 70%;
+    }
+  }
+}

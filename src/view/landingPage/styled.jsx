@@ -105,6 +105,39 @@ export const LandingPageContainer = styled.div`
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    .sub-title {
+      font-size: 18px !important;
+    }
+    .hero-content {
+      padding-top: 154px;
+    }
+    .hero-text {
+      font-size: 38px !important;
+      line-height: 48px !important;
+    }
+    .description {
+      font-size: 16px !important;
+    }
+    .connection-box {
+      padding: 8px !important;
+      .left {
+        label {
+          font-size: 12px !important;
+        }
+        input {
+          font-size: 16px !important;
+        }
+      }
+      button {
+        height: 48px !important;
+        width: 150px !important;
+      }
+    }
+    .hero-image {
+      display: none !important;
+    }
+  }
 `;
 
 export const SoftwareSectionContainer = styled.div`
@@ -115,6 +148,7 @@ export const SoftwareSectionContainer = styled.div`
   text-align: center;
   width: 100%;
   background-color: #fff;
+
   .section-title {
     font: 600 22px "Manrope";
     line-height: 25px;
@@ -125,6 +159,15 @@ export const SoftwareSectionContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 52px 0;
+    .section-title {
+      font-size: 18px;
+    }
   }
 `;
 
@@ -218,6 +261,35 @@ export const ProcessSectionContainer = styled.div`
       }
     }
   }
+  @media screen and (max-width: 991px) {
+    padding-top: 50px;
+    padding-bottom: 340px;
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+    .section-sub-title {
+      margin-top: 0px !important;
+    }
+    .section-title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .row {
+      margin-left: 0px;
+      margin-right: 0px;
+      .col-lg-4,
+      .col-md-4,
+      .col-sm-12 {
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+    .index {
+      right: 10px !important;
+    }
+  }
 `;
 
 export const NextLevelSectionContainer = styled.div`
@@ -229,7 +301,7 @@ export const NextLevelSectionContainer = styled.div`
     .image-cover {
       position: relative;
       top: -250px;
-      width: 840px;
+      max-width: 840px;
       height: 400px;
       img {
         position: absolute;
@@ -338,6 +410,46 @@ export const NextLevelSectionContainer = styled.div`
       padding: 16px 42px;
     }
   }
+  @media screen and (max-width: 991px) {
+    .section-image-container {
+      .image-cover {
+        .content {
+          .title {
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+          }
+          .description {
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .goth-section {
+      .section-title {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .section-description {
+        font-size: 18px;
+      }
+      .grow-list {
+        &.row {
+          margin-left: -15px;
+          margin-right: -15px;
+
+          .col-lg-4,
+          .col-md-4,
+          .col-sm-12 {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+  }
 `;
 
 export const BuiltNowSectionContainer = styled.div`
@@ -376,6 +488,19 @@ export const BuiltNowSectionContainer = styled.div`
       color: #64607d;
     }
   }
+  @media screen and (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .text-item {
+      .content {
+        font-size: 18px;
+      }
+    }
+  }
 `;
 
 export const OfferedSectionContainer = styled.div`
@@ -411,6 +536,25 @@ export const OfferedSectionContainer = styled.div`
       line-height: 30px;
       padding-bottom: 36px;
       color: #64607d;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .row {
+    margin-left: -15px;
+    margin-right: -15px;
+    .col-lg-4,
+    .col-md-4,
+    .col-sm-12 {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 30px;
+    }
+  }
+    .card-item{
+      .title{
+        font-size: 24px;
+        line-height: 30px;
+      }
     }
   }
 `;
@@ -451,16 +595,26 @@ export const WhyChooseUsContainer = styled.div`
         color: rgba(255, 255, 255, 0.4);
       }
     }
-    button{
-      font: 700 16px 'Poppins';
+    button {
+      font: 700 16px "Poppins";
       color: #fff;
-      background: #F57059;
+      background: #f57059;
       border-radius: 5px;
       line-height: 22px;
       width: 100%;
       border: none;
       outline: none;
       height: 60px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .sec-title{
+      font-size: 32px;
+      line-height: 42px;
+    }
+    .sec-desc{
+      font-size: 18px;
+      margin-bottom: 32px;
     }
   }
 `;

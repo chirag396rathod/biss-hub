@@ -62,8 +62,31 @@ export const FooterContainer = styled.div`
     font: 500 16px "Manrope";
     color: #181433;
     padding-top: 40px;
-    border-top: 2px solid #E5E5EA;
+    border-top: 2px solid #e5e5ea;
     margin-top: 60px;
     text-align: center;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 60px 0;
+    .title {
+      margin-bottom: 22px !important;
+    }
+    .label {
+      font-size: 18px;
+    }
+    .link-item{
+      margin-bottom: 16px;
+    }
+    .descri {
+      margin-bottom: 24px !important;
+    }
+    .social-list {
+      margin-bottom: 24px;
+    }
+    .input-group {
+      button {
+        padding: 0 16px;
+      }
+    }
   }
 `;

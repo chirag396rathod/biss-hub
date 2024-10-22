@@ -71,6 +71,17 @@ export const HeaderContainer = styled.header`
   svg {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 991px) {
+    .container {
+      nav {
+        display: none;
+      }
+      .action-button {
+        display: none;
+      }
+    }
+  }
 `;
 
 export const NotificationContainer = styled.div`
@@ -81,12 +92,12 @@ export const NotificationContainer = styled.div`
     align-items: center;
     padding-top: 25px;
     margin-bottom: 22px;
-    border-top: 1px solid #ECECEC;
-    &:first-child{
+    border-top: 1px solid #ececec;
+    &:first-child {
       border-top: none;
       padding-top: 0px;
     }
-    &:last-child{
+    &:last-child {
       margin-bottom: 0px;
     }
     .user-image {
@@ -96,13 +107,54 @@ export const NotificationContainer = styled.div`
       background-color: #64607d;
       margin-right: 10px;
     }
-    .message{
-      span{
+    .message {
+      span {
         font: 700 15px Poppins;
         color: #000;
       }
       font: 400 15px Poppins;
       color: #64607d;
+    }
+  }
+`;
+export const SidebarLayout = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .close-icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav {
+    margin-top: 24px;
+    .nav-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      a {
+        font: 600 14px "Manrope";
+        color: #000;
+        cursor: pointer;
+      }
+      img {
+        margin-left: 12px;
+      }
+    }
+  }
+  .alt-button{
+    border: 1px solid #4f46ba;
+    background-color: #fff;
+    color: #4f46ba;
+    margin-bottom: 16px;
+    margin-top: 12px;
+  }
+  .login-user{
+    width: 100%;
+    button{
+      width: 100%;
     }
   }
 `;
